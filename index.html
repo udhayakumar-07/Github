@@ -3,10 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Udhayakumar | MBA Graduate - Business Analyst & Digital Marketing Specialist</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Lexend:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Udhayakumar | MBA Graduate - Business Analyst</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Lexend:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -14,27 +12,14 @@
             box-sizing: border-box;
         }
 
-        :root {
-            --primary-dark: #0f172a;
-            --secondary-dark: #1e293b;
-            --accent-blue: #3b82f6;
-            --accent-cyan: #06b6d4;
-            --accent-emerald: #10b981;
-            --text-white: #f8fafc;
-            --text-gray: #94a3b8;
-            --gradient-main: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);
-            --gradient-accent: linear-gradient(135deg, #10b981 0%, #06b6d4 100%);
-        }
-
         body {
             font-family: 'Plus Jakarta Sans', sans-serif;
-            background: var(--primary-dark);
-            color: var(--text-white);
+            background: #0f172a;
+            color: #f8fafc;
             line-height: 1.6;
             overflow-x: hidden;
         }
 
-        /* Navigation */
         nav {
             position: fixed;
             top: 0;
@@ -58,10 +43,9 @@
             font-family: 'Lexend', sans-serif;
             font-size: 1.5rem;
             font-weight: 700;
-            background: var(--gradient-main);
+            background: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            background-clip: text;
         }
 
         .nav-links {
@@ -71,43 +55,27 @@
         }
 
         .nav-links a {
-            color: var(--text-gray);
+            color: #94a3b8;
             text-decoration: none;
             font-weight: 500;
             transition: color 0.3s;
         }
 
         .nav-links a:hover {
-            color: var(--accent-cyan);
+            color: #06b6d4;
         }
 
-        /* Hero Section */
         .hero {
             min-height: 100vh;
             display: flex;
             align-items: center;
             padding: 0 5%;
             margin-top: 80px;
-            position: relative;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: radial-gradient(circle at 30% 20%, rgba(59, 130, 246, 0.15) 0%, transparent 50%),
-                        radial-gradient(circle at 70% 80%, rgba(6, 182, 212, 0.15) 0%, transparent 50%);
-            pointer-events: none;
         }
 
         .hero-container {
             max-width: 1400px;
             margin: 0 auto;
-            position: relative;
-            z-index: 1;
         }
 
         .hero-badge {
@@ -116,16 +84,10 @@
             background: rgba(59, 130, 246, 0.1);
             border: 1px solid rgba(59, 130, 246, 0.3);
             border-radius: 50px;
-            color: var(--accent-cyan);
+            color: #06b6d4;
             font-size: 0.9rem;
             font-weight: 600;
             margin-bottom: 2rem;
-            animation: fadeIn 0.8s ease;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
         }
 
         .hero h1 {
@@ -134,29 +96,25 @@
             font-weight: 800;
             line-height: 1.1;
             margin-bottom: 1.5rem;
-            animation: fadeIn 0.8s ease 0.2s both;
         }
 
         .gradient-text {
-            background: var(--gradient-main);
+            background: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            background-clip: text;
         }
 
         .hero-subtitle {
             font-size: 1.3rem;
-            color: var(--text-gray);
+            color: #94a3b8;
             max-width: 700px;
             margin-bottom: 3rem;
-            animation: fadeIn 0.8s ease 0.4s both;
         }
 
         .cta-buttons {
             display: flex;
             gap: 1rem;
             flex-wrap: wrap;
-            animation: fadeIn 0.8s ease 0.6s both;
         }
 
         .btn {
@@ -168,7 +126,7 @@
         }
 
         .btn-primary {
-            background: var(--gradient-main);
+            background: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);
             color: white;
         }
 
@@ -178,26 +136,23 @@
         }
 
         .btn-secondary {
-            border: 2px solid var(--accent-blue);
-            color: var(--accent-blue);
+            border: 2px solid #3b82f6;
+            color: #3b82f6;
         }
 
         .btn-secondary:hover {
             background: rgba(59, 130, 246, 0.1);
         }
 
-        /* Stats */
         .stats {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 2rem;
             margin-top: 5rem;
-            animation: fadeIn 0.8s ease 0.8s both;
         }
 
         .stat-card {
             background: rgba(30, 41, 59, 0.5);
-            backdrop-filter: blur(10px);
             padding: 2rem;
             border-radius: 12px;
             border: 1px solid rgba(255, 255, 255, 0.1);
@@ -207,26 +162,24 @@
 
         .stat-card:hover {
             transform: translateY(-5px);
-            border-color: var(--accent-blue);
+            border-color: #3b82f6;
         }
 
         .stat-number {
             font-family: 'Lexend', sans-serif;
             font-size: 2rem;
             font-weight: 700;
-            background: var(--gradient-main);
+            background: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            background-clip: text;
             margin-bottom: 0.5rem;
         }
 
         .stat-label {
-            color: var(--text-gray);
+            color: #94a3b8;
             font-size: 0.9rem;
         }
 
-        /* Section Styles */
         section {
             padding: 6rem 5%;
         }
@@ -237,7 +190,7 @@
         }
 
         .section-tag {
-            color: var(--accent-cyan);
+            color: #06b6d4;
             font-weight: 600;
             font-size: 0.9rem;
             letter-spacing: 0.1em;
@@ -253,47 +206,42 @@
         }
 
         .section-subtitle {
-            color: var(--text-gray);
+            color: #94a3b8;
             font-size: 1.1rem;
             max-width: 600px;
             margin: 0 auto;
         }
 
-        /* About Section */
         .about-grid {
             max-width: 1200px;
             margin: 0 auto;
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 4rem;
-            align-items: start;
         }
 
         .about-content p {
-            color: var(--text-gray);
+            color: #94a3b8;
             margin-bottom: 1.5rem;
             line-height: 1.8;
-            font-size: 1.05rem;
         }
 
         .highlight {
-            color: var(--accent-cyan);
+            color: #06b6d4;
             font-weight: 600;
         }
 
         .education-card {
             background: rgba(30, 41, 59, 0.5);
-            backdrop-filter: blur(10px);
             padding: 2rem;
             border-radius: 12px;
-            border-left: 4px solid var(--accent-blue);
+            border-left: 4px solid #3b82f6;
             margin-bottom: 1.5rem;
             transition: all 0.3s;
         }
 
         .education-card:hover {
             transform: translateX(10px);
-            background: rgba(30, 41, 59, 0.8);
         }
 
         .education-card h3 {
@@ -301,18 +249,17 @@
             margin-bottom: 0.5rem;
         }
 
-        .education-card .institution {
-            color: var(--accent-cyan);
+        .institution {
+            color: #06b6d4;
             font-weight: 600;
             margin-bottom: 0.5rem;
         }
 
-        .education-card .details {
-            color: var(--text-gray);
+        .details {
+            color: #94a3b8;
             font-size: 0.95rem;
         }
 
-        /* Skills Section */
         .skills {
             background: rgba(30, 41, 59, 0.3);
         }
@@ -327,7 +274,6 @@
 
         .skill-card {
             background: rgba(30, 41, 59, 0.5);
-            backdrop-filter: blur(10px);
             padding: 2.5rem;
             border-radius: 12px;
             border: 1px solid rgba(255, 255, 255, 0.1);
@@ -336,7 +282,7 @@
 
         .skill-card:hover {
             transform: translateY(-10px);
-            border-color: var(--accent-blue);
+            border-color: #3b82f6;
         }
 
         .skill-icon {
@@ -354,7 +300,7 @@
         }
 
         .skill-card li {
-            color: var(--text-gray);
+            color: #94a3b8;
             padding: 0.5rem 0;
             padding-left: 1.5rem;
             position: relative;
@@ -364,10 +310,9 @@
             content: '▸';
             position: absolute;
             left: 0;
-            color: var(--accent-cyan);
+            color: #06b6d4;
         }
 
-        /* Projects Section */
         .projects-grid {
             max-width: 1400px;
             margin: 0 auto;
@@ -378,7 +323,6 @@
 
         .project-card {
             background: rgba(30, 41, 59, 0.5);
-            backdrop-filter: blur(10px);
             border-radius: 12px;
             overflow: hidden;
             border: 1px solid rgba(255, 255, 255, 0.1);
@@ -387,24 +331,17 @@
 
         .project-card:hover {
             transform: translateY(-10px);
-            border-color: var(--accent-blue);
+            border-color: #3b82f6;
         }
 
         .project-header {
             height: 180px;
-            background: var(--gradient-main);
+            background: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);
             display: flex;
             align-items: center;
             justify-content: center;
-            font-family: 'Lexend', sans-serif;
             font-size: 3rem;
-            font-weight: 800;
-            color: white;
         }
-
-        .project-card:nth-child(1) .project-header { background: var(--gradient-main); }
-        .project-card:nth-child(2) .project-header { background: var(--gradient-accent); }
-        .project-card:nth-child(3) .project-header { background: linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%); }
 
         .project-body {
             padding: 2rem;
@@ -416,7 +353,7 @@
         }
 
         .project-body p {
-            color: var(--text-gray);
+            color: #94a3b8;
             line-height: 1.7;
             margin-bottom: 1.5rem;
         }
@@ -433,10 +370,9 @@
             border: 1px solid rgba(59, 130, 246, 0.3);
             border-radius: 20px;
             font-size: 0.85rem;
-            color: var(--accent-cyan);
+            color: #06b6d4;
         }
 
-        /* Contact Section */
         .contact {
             background: rgba(30, 41, 59, 0.3);
         }
@@ -456,7 +392,6 @@
 
         .contact-card {
             background: rgba(30, 41, 59, 0.5);
-            backdrop-filter: blur(10px);
             padding: 2rem;
             border-radius: 12px;
             border: 1px solid rgba(255, 255, 255, 0.1);
@@ -465,62 +400,35 @@
 
         .contact-card:hover {
             transform: translateY(-5px);
-            background: rgba(30, 41, 59, 0.8);
         }
 
         .contact-card h3 {
-            font-size: 1.1rem;
             margin-bottom: 0.5rem;
         }
 
         .contact-card a {
-            color: var(--accent-cyan);
+            color: #06b6d4;
             text-decoration: none;
-            transition: color 0.3s;
         }
 
-        .contact-card a:hover {
-            color: var(--accent-blue);
-        }
-
-        /* Footer */
         footer {
             text-align: center;
             padding: 2rem;
-            color: var(--text-gray);
+            color: #94a3b8;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
 
-        /* Responsive */
         @media (max-width: 968px) {
             .about-grid {
                 grid-template-columns: 1fr;
             }
-
             .nav-links {
                 display: none;
             }
-
-            section {
-                padding: 4rem 5%;
-            }
-        }
-
-        /* Scroll Animations */
-        .reveal {
-            opacity: 0;
-            transform: translateY(50px);
-            transition: all 0.8s ease;
-        }
-
-        .reveal.active {
-            opacity: 1;
-            transform: translateY(0);
         }
     </style>
 </head>
 <body>
-    <!-- Navigation -->
     <nav>
         <div class="nav-container">
             <div class="logo">UDHAYAKUMAR</div>
@@ -533,13 +441,10 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section class="hero">
         <div class="hero-container">
             <div class="hero-badge">MBA Graduate | Business Analyst | Digital Marketer</div>
-            <h1>
-                Hi, I'm <span class="gradient-text">Udhayakumar</span>
-            </h1>
+            <h1>Hi, I'm <span class="gradient-text">Udhayakumar</span></h1>
             <p class="hero-subtitle">
                 MBA Graduate from SRM University specializing in Business Analysis, Digital Marketing, and Data-Driven Strategic Insights
             </p>
@@ -568,9 +473,8 @@
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="about">
-        <div class="section-header reveal">
+        <div class="section-header">
             <div class="section-tag">About Me</div>
             <h2 class="section-title">Transforming Data Into Strategic Insights</h2>
             <p class="section-subtitle">
@@ -578,18 +482,15 @@
             </p>
         </div>
         <div class="about-grid">
-            <div class="about-content reveal">
+            <div class="about-content">
                 <p>
-                    I'm <span class="highlight">Udhayakumar</span>, a recent MBA graduate from SRM University (2024-2025 batch) with a strong foundation in business analysis, digital marketing, and operations management.
+                    I'm <span class="highlight">Udhayakumar</span>, a recent MBA graduate from SRM University (2024-2025) with a strong foundation in business analysis, digital marketing, and operations management.
                 </p>
                 <p>
-                    Having completed my final semester examinations in December 2025 with results now released, I bring fresh academic knowledge combined with practical project experience in data analytics and digital strategy.
-                </p>
-                <p>
-                    My expertise lies in transforming complex datasets into actionable business insights, particularly demonstrated through my comprehensive analysis of India's state-wise GST revenue collection—showcasing my ability to handle large-scale data projects and derive meaningful strategic recommendations.
+                    My expertise lies in transforming complex datasets into actionable business insights, particularly demonstrated through my comprehensive analysis of India's state-wise GST revenue collection.
                 </p>
             </div>
-            <div class="reveal">
+            <div>
                 <div class="education-card">
                     <h3>Master of Business Administration (MBA)</h3>
                     <div class="institution">SRM University</div>
@@ -603,16 +504,15 @@
                     <div class="institution">Programming Hub</div>
                     <div class="details">
                         ✅ Completed 2025<br>
-                        📚 Comprehensive digital marketing strategies, SEO/SEM, analytics, and campaign management
+                        📚 SEO/SEM, Analytics, Campaign Management
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
     <section id="skills" class="skills">
-        <div class="section-header reveal">
+        <div class="section-header">
             <div class="section-tag">Expertise</div>
             <h2 class="section-title">Skills & Competencies</h2>
             <p class="section-subtitle">
@@ -620,7 +520,7 @@
             </p>
         </div>
         <div class="skills-grid">
-            <div class="skill-card reveal">
+            <div class="skill-card">
                 <div class="skill-icon">📊</div>
                 <h3>Business Analysis</h3>
                 <ul>
@@ -629,10 +529,9 @@
                     <li>Strategic Planning</li>
                     <li>KPI Development</li>
                     <li>Revenue Analysis</li>
-                    <li>Business Intelligence</li>
                 </ul>
             </div>
-            <div class="skill-card reveal">
+            <div class="skill-card">
                 <div class="skill-icon">💻</div>
                 <h3>Analytics Tools</h3>
                 <ul>
@@ -640,11 +539,10 @@
                     <li>Tableau</li>
                     <li>Power BI</li>
                     <li>Data Visualization</li>
-                    <li>Statistical Analysis</li>
                     <li>Dashboard Creation</li>
                 </ul>
             </div>
-            <div class="skill-card reveal">
+            <div class="skill-card">
                 <div class="skill-icon">🎯</div>
                 <h3>Digital Marketing</h3>
                 <ul>
@@ -652,11 +550,10 @@
                     <li>Social Media Marketing</li>
                     <li>Content Strategy</li>
                     <li>Campaign Analytics</li>
-                    <li>Google Analytics</li>
                     <li>ROI Optimization</li>
                 </ul>
             </div>
-            <div class="skill-card reveal">
+            <div class="skill-card">
                 <div class="skill-icon">⚙️</div>
                 <h3>Operations Management</h3>
                 <ul>
@@ -665,10 +562,9 @@
                     <li>Quality Management</li>
                     <li>Project Management</li>
                     <li>Efficiency Analysis</li>
-                    <li>Resource Planning</li>
                 </ul>
             </div>
-            <div class="skill-card reveal">
+            <div class="skill-card">
                 <div class="skill-icon">🚀</div>
                 <h3>Strategic Skills</h3>
                 <ul>
@@ -677,10 +573,9 @@
                     <li>Critical Thinking</li>
                     <li>Decision Making</li>
                     <li>Stakeholder Management</li>
-                    <li>Financial Analysis</li>
                 </ul>
             </div>
-            <div class="skill-card reveal">
+            <div class="skill-card">
                 <div class="skill-icon">🤝</div>
                 <h3>Soft Skills</h3>
                 <ul>
@@ -689,15 +584,13 @@
                     <li>Team Collaboration</li>
                     <li>Presentation</li>
                     <li>Adaptability</li>
-                    <li>Research & Analysis</li>
                 </ul>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
     <section id="projects">
-        <div class="section-header reveal">
+        <div class="section-header">
             <div class="section-tag">Featured Work</div>
             <h2 class="section-title">Key Projects</h2>
             <p class="section-subtitle">
@@ -705,69 +598,65 @@
             </p>
         </div>
         <div class="projects-grid">
-            <div class="project-card reveal">
+            <div class="project-card">
                 <div class="project-header">🇮🇳</div>
                 <div class="project-body">
                     <h3>India's State-wise GST Revenue Analysis</h3>
                     <p>
-                        Comprehensive analysis of India's overall GST collection with detailed state-wise revenue breakdown. Utilized advanced data analytics to identify trends, patterns, and regional disparities in tax collection, providing strategic insights for revenue optimization.
+                        Comprehensive analysis of India's overall GST collection with detailed state-wise revenue breakdown. Utilized advanced data analytics to identify trends, patterns, and regional disparities in tax collection.
                     </p>
                     <div class="project-tags">
                         <span class="tag">Excel</span>
                         <span class="tag">Data Analysis</span>
                         <span class="tag">Tableau</span>
-                        <span class="tag">Revenue Analytics</span>
                         <span class="tag">Power BI</span>
                     </div>
                 </div>
             </div>
-            <div class="project-card reveal">
+            <div class="project-card">
                 <div class="project-header">📈</div>
                 <div class="project-body">
                     <h3>Digital Marketing Campaign Analytics</h3>
                     <p>
-                        Multi-channel digital marketing campaign analysis measuring ROI, conversion rates, customer acquisition costs, and engagement metrics across social media, search, and display advertising platforms.
+                        Multi-channel digital marketing campaign analysis measuring ROI, conversion rates, and engagement metrics across social media and search platforms.
                     </p>
                     <div class="project-tags">
                         <span class="tag">SEO/SEM</span>
                         <span class="tag">Google Analytics</span>
                         <span class="tag">Campaign Management</span>
-                        <span class="tag">ROI Analysis</span>
                     </div>
                 </div>
             </div>
-            <div class="project-card reveal">
+            <div class="project-card">
                 <div class="project-header">💼</div>
                 <div class="project-body">
                     <h3>Business Intelligence Dashboard</h3>
                     <p>
-                        Developed interactive business intelligence dashboard using Power BI to track KPIs, sales performance, market trends, and operational metrics for data-driven strategic decision-making.
+                        Developed interactive business intelligence dashboard using Power BI to track KPIs, sales performance, and operational metrics for data-driven decision-making.
                     </p>
                     <div class="project-tags">
                         <span class="tag">Power BI</span>
                         <span class="tag">Excel</span>
                         <span class="tag">KPI Tracking</span>
-                        <span class="tag">Business Intelligence</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="contact-container">
-            <div class="section-header reveal">
+            <div class="section-header">
                 <div class="section-tag">Get In Touch</div>
                 <h2 class="section-title">Let's Connect</h2>
                 <p class="section-subtitle">
                     Open to business analyst roles, digital marketing opportunities, and data analytics projects
                 </p>
             </div>
-            <div class="contact-methods reveal">
+            <div class="contact-methods">
                 <div class="contact-card">
                     <h3>📧 Email</h3>
-                    <a href="/cdn-cgi/l/email-protection#1663727e776f777d637b776456736e777b667a733875797b"><span class="__cf_email__" data-cfemail="fb8e9f939a829a908e969a89bb9e839a968b979ed5989496">[email&#160;protected]</span></a>
+                    <a href="mailto:udhayakumar@example.com">udhayakumar@example.com</a>
                 </div>
                 <div class="contact-card">
                     <h3>💼 LinkedIn</h3>
@@ -781,13 +670,11 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <p>&copy; 2025 Udhayakumar | MBA Graduate - SRM University | Business Analyst | Digital Marketing Specialist</p>
     </footer>
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-        // Smooth Scroll
+    <script>
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -797,14 +684,6 @@
                 }
             });
         });
-
-        // Scroll Reveal Animation
-        const reveals = document.querySelectorAll('.reveal');
-        
-        const revealOnScroll = () => {
-            const windowHeight = window.innerHeight;
-            reveals.forEach(element => {
-                const elementTop = element.getBoundingClientRect().top;
-                const revealPoint = 100;
-                
-                if (elemen
+    </script>
+</body>
+</html>
